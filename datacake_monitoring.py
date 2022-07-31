@@ -78,7 +78,7 @@ try:
     client.publish(mqtt_pub_topic_prefix + "VOLT", payload=voltage,qos=0)
     client.publish(mqtt_pub_topic_prefix + "CURRENT", payload=current,qos=0)
     client.publish(mqtt_pub_topic_prefix + "POWER", payload=power,qos=0)
-    client.publish(mqtt_pub_topic_prefix + "KILOWATTHOURS", payload=kwh,qos=0)
+    client.publish(mqtt_pub_topic_prefix + "KWH", payload=kwh,qos=0)
 except IOError:
     print("Failed to read from instrument")
 
